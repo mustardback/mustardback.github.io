@@ -36,9 +36,9 @@ document.addEventListener('click', () => {
     sup2index = Math.floor(Math.random() * 3)
 
     p1char.src = charSrcs[ran1index].path
-    p1name.innerHTML = charSrcs[ran1index].name
-    p1super.innerHTML = charSrcs[ran1index].supers[sup1index]
+    p1name.textContent = charSrcs[ran1index].name
+    p1super.textContent = charSrcs[ran1index].supers[sup1index]
     p2char.src = charSrcs[ran2index].path
-    p2name.innerHTML = charSrcs[ran2index].name
-    p2super.innerHTML = charSrcs[ran2index].supers[sup2index]
+    p2name.textContent = charSrcs[ran2index].name
+    p2super.textContent = charSrcs[ran2index].supers[sup2index]
   });
