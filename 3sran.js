@@ -43,9 +43,7 @@ function disableClick(event){
 function resetClick(){
     document.body.style.cursor = 'default';
     document.removeEventListener('click', disableClick, true);
-    document.addEventListener('click', () => {
-        visualize();
-      });
+
 };
 
 const visualize = function visualize(){
@@ -66,7 +64,7 @@ const visualize = function visualize(){
     },9000);
     setTimeout(function(){
         resetClick();
-    },11000);
+    },12000);
 };
 
 const randomate = function randomate(){
