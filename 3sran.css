@@ -38,22 +38,28 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
-  .image-container {
+  .text-container {
     /* Use flexbox for a more modern approach to alignment */
     display: flex;
     justify-content: center; /* or flex-start for left, flex-end for right */
     align-items: center; /* Vertically centers the images */
   }
+
+  .image-container {
+    /* Use flexbox for a more modern approach to alignment */
+    display: flex;
+    justify-content: center; /* or flex-start for left, flex-end for right */
+    align-items: center; /* Vertically centers the images */
+    height: 85vh;
+  }
   
   .image-container img {
     display: inline-block;
     vertical-align: middle; /* Ensures consistent vertical alignment */
-    margin: 5px; /* Adds a small space between images */
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
-    /* This creates the rounded corners. */
-    /* Adjust the value to control the roundness. */
+    margin: 5px;
     border-radius: 100px;
+    width: auto;
     max-width: 50%;
-    height: 85vh;
+    height: auto;
     max-height: 85vh;
   }
