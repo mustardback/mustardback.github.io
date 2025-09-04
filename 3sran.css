@@ -8,7 +8,6 @@ body {
     margin-left: 0;
     margin-right: auto;
     width: auto;
-    height: 85vh;
     transform: scaleX(-1);
   }
 
@@ -17,7 +16,6 @@ body {
     margin-left: auto;
     margin-right: 0;
     width: auto;
-    height: 85vh;
   }
 
   .lefttext {
@@ -50,16 +48,16 @@ body {
     display: flex;
     justify-content: center; /* or flex-start for left, flex-end for right */
     align-items: center; /* Vertically centers the images */
-    height: 85vh;
+    height: 80vh;
   }
   
   .image-container img {
     display: inline-block;
     vertical-align: middle; /* Ensures consistent vertical alignment */
     margin: 5px;
-    border-radius: 100px;
+    border-radius: 50px;
     width: auto;
     max-width: 50%;
     height: auto;
-    max-height: 85vh;
+    max-height: 80vh;
   }

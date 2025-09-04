@@ -31,6 +31,19 @@ const charSrcs = [
     {name: 'Yun', tpath: 'images/yun.png', spath: 'images/yunsel.png', supers: ['SAI: You Hou', 'SAII: Sourai Rengeki', 'SAIII: Genei Jin']}
 ];
 
+function preloadImages() {
+    for (const charSrc of charSrcs) {
+        const timg = new Image();
+        timg.src = charSrc.tpath;
+        const simg = new Image();
+        simg.src = charSrc.spath;
+    }
+  };
+
+window.addEventListener('load', () => {
+    preloadImages();
+  });
+
 document.addEventListener('click', () => {
     visualize();
   });
